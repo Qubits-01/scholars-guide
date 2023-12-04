@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login, Logout, Sign-up, Email Verification BE Demo</title>
+  </head>
+
+  <body id="body">
+    <!-- Sign-up -->
+    <div id="sign-up">
+      <h1>Sign-up</h1>
+      <form id="sign-up-form">
+        <input
+          type="text"
+          id="sign-up-username"
+          placeholder="Username"
+          required
+        />
+        <input type="email" id="sign-up-email" placeholder="Email" required />
+        <input
+          type="password"
+          id="sign-up-password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Sign-up</button>
+      </form>
+    </div>
+
+    <!-- Email Verification  -->
+    <div id="email-verification">
+      <h1>Email Verification</h1>
+      <form id="email-verification-form">
+        <input
+          type="email"
+          id="email-verification-email"
+          placeholder="Email"
+          required
+        />
+        <button type="submit">Send Verification Email</button>
+      </form>
+      <form id="email-verification-form">
+        <input
+          type="text"
+          id="email-verification-code"
+          placeholder="Code"
+          required
+        />
+        <button type="submit">Verify</button>
+      </form>
+    </div>
+
+    <!-- Login -->
+    <div id="login">
+      <h1>Login</h1>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Logged-in User Info -->
+    <div id="logged-in-user-info">
+      <h1>Logged-in User Info</h1>
+      <p id="logged-in-user-name">[ Null ]</p>
+      <p id="logged-in-user-email">[ Null ]</p>
+      <p id="logged-in-user-verified">[ Null ]</p>
+    </div>
+
+    <!-- Logout -->
+    <div id="logout">
+      <h1>Logout</h1>
+      <button id="logout-button">Logout</button>
+    </div>
+
+    <!-- Forgot Password -->
+    <div id="forgot-password">
+      <h1>Forgot Password</h1>
+      <form id="forgot-password-form">
+        <input
+          type="email"
+          id="forgot-password-email"
+          placeholder="Email"
+          required
+        />
+        <button type="submit">Send Password Reset Email</button>
+      </form>
+      <form id="forgot-password-form">
+        <input
+          type="text"
+          id="forgot-password-code"
+          placeholder="Code"
+          required
+        />
+        <input
+          type="password"
+          id="forgot-password-password"
+          placeholder="New Password"
+          required
+        />
+        <button type="submit">Reset Password</button>
+      </form>
+  </body>
+
+  <script src="index.js"></script>
+</html>
